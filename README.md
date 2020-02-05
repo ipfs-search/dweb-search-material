@@ -1,4 +1,4 @@
-# ipfs-search-material
+# dweb-search-material
 
 ## Project setup
 ```
