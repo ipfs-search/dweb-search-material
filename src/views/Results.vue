@@ -4,12 +4,23 @@
     <div>
       You've searched for {{ query }}
     </div> -->
-    <v-container class="mx-auto pa-0">
-      <v-card
-        flat
-      >
+    <v-container class="mx-auto pa-0 pt-2">
+
+      <v-col cols="12" class="pb-0">
+        <v-select
+          class="mb-0"
+          v-model="select"
+          :items="items"
+          label="Filter search"
+          outlined
+          chips
+          small-chips
+          deletable-chips
+          multiple
+        ></v-select>
+      </v-col>
       <v-list three-line>
-        <template v-for="(item, index) in items">
+        <template v-for="(item, index) in entrees">
           <v-subheader
             v-if="item.header"
             :key="item.header"
@@ -38,7 +49,76 @@
           </v-list-item>
         </template>
       </v-list>
+
+
+      <v-card
+        class="mx-auto"
+        max-width="344"
+        outlined
+      >
+        <v-list-item three-line>
+          <v-list-item-content>
+            <div class="overline mb-4">OVERLINE</div>
+            <v-list-item-title class="headline mb-1">Headline 5</v-list-item-title>
+            <v-list-item-subtitle>Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle>
+          </v-list-item-content>
+
+          <v-list-item-avatar
+            tile
+            size="80"
+            color="grey"
+          ></v-list-item-avatar>
+        </v-list-item>
+
+        <v-card-actions>
+          <v-btn text>Button</v-btn>
+          <v-btn text>Button</v-btn>
+        </v-card-actions>
       </v-card>
+
+      <v-subheader>May</v-subheader>
+        <v-container fluid>
+          <v-row>
+            <v-col
+              v-for="i in 6"
+              :key="i"
+              cols="2"
+            >
+              <img
+                :src="`https://randomuser.me/api/portraits/men/${i + 20}.jpg`"
+                alt="lorem"
+                class="image"
+                height="100%"
+                width="100%"
+              >
+            </v-col>
+          </v-row>
+        </v-container>
+
+        <v-subheader>June</v-subheader>
+        <v-container fluid>
+          <v-row>
+            <v-col
+              v-for="i in 6"
+              :key="i"
+              cols="2"
+            >
+              <img
+                :src="`https://randomuser.me/api/portraits/women/${i + 5}.jpg`"
+                alt="lorem"
+                class="image"
+                height="100%"
+                width="100%"
+              >
+            </v-col>
+          </v-row>
+        </v-container>
+
+
+
+
+
+
     </v-container>
 
 
@@ -61,8 +141,8 @@ export default {
 
   data: () => ({
     query: null,
-    items: [
-        { header: 'Today' },
+    entrees: [
+        { header: 'Texts' },
         {
           avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg',
           title: 'Brunch this weekend?',
@@ -93,6 +173,14 @@ export default {
           subtitle: "<span class='text--primary'>Britta Holt</span> &mdash; We should eat this: Grate, Squash, Corn, and tomatillo Tacos.",
         },
       ],
+      select: ['Texts', 'Music'],
+      items: [
+        'Texts',
+        'Images',
+        'Music',
+        'Videos',
+        'Directories',
+      ],
   }),
 
   watch: {
@@ -111,3 +199,7 @@ export default {
   }
 };
 </script>
+
+<style scoped lang="scss">
+
+</style>
