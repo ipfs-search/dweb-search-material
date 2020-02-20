@@ -47,7 +47,7 @@
                     <v-icon size="58px" class="secondary--text text--lighten-1">mdi-wrench</v-icon>
                   </v-card-text>
                   <v-card-title primary-title>
-                    <div class="headline">Search high volumes of data</div>
+                    <div class="headline">Search high volumes of&#160;data</div>
                   </v-card-title>
                   <v-card-text>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet quae, officiis, iure
@@ -79,7 +79,7 @@
                     <v-icon size="58px" class="secondary--text text--lighten-1">mdi-open-source-initiative</v-icon>
                   </v-card-text>
                   <v-card-title primary-title>
-                    <div class="headline">Completely Open Sourced</div>
+                    <div class="headline">Open Sourced</div>
                   </v-card-title>
                   <v-card-text>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eveniet quae, officiis, iure
