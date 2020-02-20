@@ -6,6 +6,8 @@
       height="64"
       dark
     >
+    <container class="d-flex justify-space-between full-width">
+
       <div class="d-flex align-center">
         <router-link to="/">
           <v-img
@@ -17,27 +19,32 @@
             width="42"
           />
         </router-link>
-        <h2 class="hidden-sm-and-down">DWEB&#8194;<span>SEARCH</span></h2>
+        <h2 class="hidden-sm-and-down mr-3">DWEB&#8194;<span>SEARCH</span></h2>
       </div>
 
-      <v-spacer class="hidden-sm-and-down"></v-spacer>
-
+      <div class="search d-flex align-center flex-sm-grow-1 flex-sm-shrink-0 flex-xs-shrink-1">
         <v-text-field
           placeholder="Search..."
           flat
-          dark
+          rounded
+          light
+          autofocus
+          validate-on-blur
+          clearable
           hide-details
-          solo-inverted
+          solo
           v-model="query"
           @keyup.enter="onClickSearch"
+          append-icon="mdi-magnify"
+
         >
-          <template v-slot:append-outer>
-            <v-icon
-              size="32px"
-              @click="onClickSearch"
-            >mdi-magnify</v-icon>
-          </template>
         </v-text-field>
+      </div>
+
+      <div class="contra-spacer hidden-md-and-down"></div>
+
+    </container>
+
 
     </v-app-bar>
 
@@ -80,6 +87,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  .full-width {
+    width: 100%;
+  }
   h2 {
     letter-spacing: 2px;
     font-weight: 600;
@@ -87,5 +97,11 @@ export default {
       letter-spacing: 3px;
       font-weight: 300;
     }
+  }
+  .contra-spacer {
+    width: 257px;
+  }
+  .search {
+    max-width: 900px;
   }
 </style>
