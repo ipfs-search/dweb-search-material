@@ -98,6 +98,15 @@
           class="white--text"
         >
           <h2 class="white--text mb-2 display-1 text-center">Search for the Distributed Web Objectives</h2>
+          <v-btn
+            class="mt-12"
+            color="secondary lighten-1"
+            dark
+            large
+            to="/api"
+          >
+            View Docs
+          </v-btn>
         </v-layout>
       </v-parallax>
     </section>
