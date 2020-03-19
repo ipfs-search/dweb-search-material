@@ -32,10 +32,7 @@
       >
         <v-flex xs12 sm4 class="my-4">
           <div >
-            <h2 class="display-1 text-center mb-2">The best way to search the distributed web</h2>
-            <div class="subheading text-center mb-4">
-              Distributed search for the next generation internet
-            </div>
+            <h2 class="display-1 text-center mb-2">Distributed search for the next generation internet</h2>
           </div>
         </v-flex>
         <v-flex xs12>
@@ -100,7 +97,7 @@
           justify-center
           class="white--text"
         >
-          <!-- <h2 class="white--text mb-2 display-1 text-center">Searching the Univers&#160;since 2016</h2> -->
+          <h2 class="white--text mb-2 display-1 text-center">Search for the Distributed Web Objectives</h2>
         </v-layout>
       </v-parallax>
     </section>
@@ -113,11 +110,6 @@
         class="my-12"
         align-center
       >
-        <v-flex xs12 sm4 class="my-4">
-          <div >
-            <h2 class="display-1 text-center mb-2">Search for the Distributed Web Objectives</h2>
-          </div>
-        </v-flex>
         <v-flex xs12>
           <v-container grid-list-xl>
             <v-layout row wrap align-top>
@@ -183,6 +175,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+h2, .subheading {
+  padding: 0 36px;
+}
 
 .parallax {
   background-color: darken(#607d8b, 10%);
