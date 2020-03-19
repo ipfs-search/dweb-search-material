@@ -19,7 +19,7 @@
             width="42"
           />
         </router-link>
-        <h2 class="hidden-sm-and-down mr-3">DWEB&#8194;<span>SEARCH</span></h2>
+        <h2 class="hidden-sm-and-down mr-3">D<span>WEB</span>&#8194;SEARCH</h2>
       </div>
 
       <div class="search d-flex align-center flex-sm-grow-1 flex-sm-shrink-0 flex-xs-shrink-1">
@@ -103,5 +103,12 @@ export default {
   }
   .search {
     max-width: 900px;
+  }
+</style>
+
+<style lang="scss">
+  .v-icon.mdi-magnify {
+    font-size: 32px !important;
+    margin-right: -10px !important;
   }
 </style>
