@@ -11,12 +11,12 @@
       <div class="d-flex align-center">
         <router-link to="/">
           <v-img
-            alt="Vuetify Logo"
-            class="shrink mr-3"
+            alt="DWEB Search Logo"
+            class="logo shrink mr-3"
             contain
             src="./assets/logo.svg"
             transition="scale-transition"
-            width="42"
+            width="36"
           />
         </router-link>
         <h2 class="hidden-sm-and-down mr-3">D<span>WEB</span>&#8194;SEARCH</h2>
@@ -90,9 +90,13 @@ export default {
   .full-width {
     width: 100%;
   }
+  .logo {
+    opacity: 0.7;
+  }
   h2 {
     letter-spacing: 2px;
     font-weight: 600;
+    opacity: 0.7;
     span {
       letter-spacing: 3px;
       font-weight: 300;
