@@ -274,10 +274,5 @@ export default {
         opacity: 0.6;
       }
     }
-    .v-card {
-      .headline {
-        font-size: 75%;
-      }
-    }
   }
 </style>
