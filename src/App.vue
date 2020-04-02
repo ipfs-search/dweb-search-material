@@ -3,7 +3,7 @@
     <v-app-bar
       app
       color="#607d8b"
-      height="64"
+      height="58"
       dark
     >
     <container class="d-flex justify-space-between full-width">
@@ -16,27 +16,26 @@
             contain
             src="./assets/logo.svg"
             transition="scale-transition"
-            width="36"
+            width="32"
           />
         </router-link>
-        <h2 class="hidden-sm-and-down mr-3">D<span>WEB</span>&#8194;SEARCH</h2>
+        <h2 class="hidden-sm-and-down mr-3">DWEB&#8194;<span>SEARCH</span></h2>
       </div>
 
       <div class="search d-flex align-center flex-sm-grow-1 flex-sm-shrink-0 flex-xs-shrink-1">
         <v-text-field
           placeholder="Search..."
+          height="24"
           flat
-          rounded
           light
+          rounded
           autofocus
           validate-on-blur
-          clearable
           hide-details
           solo
           v-model="query"
           @keyup.enter="onClickSearch"
           append-icon="mdi-magnify"
-
         >
         </v-text-field>
       </div>
@@ -105,14 +104,17 @@ export default {
   .contra-spacer {
     width: 257px;
   }
-  .search {
-    max-width: 900px;
-  }
+  // .search {
+  //   max-width: 900px;
+  // }
 </style>
 
 <style lang="scss">
   .v-icon.mdi-magnify {
-    font-size: 32px !important;
-    margin-right: -10px !important;
+    font-size: 28px !important;
+    margin-right: -18px !important;
+  }
+  .v-text-field__slot {
+    margin-left: -8px !important;
   }
 </style>
