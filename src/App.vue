@@ -25,7 +25,6 @@
       <div class="search d-flex align-center flex-sm-grow-1 flex-sm-shrink-0 flex-xs-shrink-1">
         <v-text-field
           placeholder="Search..."
-          height="24"
           flat
           light
           rounded
